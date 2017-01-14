@@ -15,16 +15,16 @@ app.config(['$routeProvider', function($routeProvider){
             controller: 'ArticleDetailsCtrl'
         }).
         when('/articles/category/:category', {
-            templateUrl: 'views/cat_articles.viw.html',
+            templateUrl: 'views/cat_articles.view.html',
             controller: 'ArticlesCategoryCtrl'
         }).
         when('/articles/add', {
             templateUrl: 'views/add_article.view.html',
-            controller: 'ArticlesCreateCtrl'
+            controller: 'ArticleCreateCtrl'
         }).
-        when('articles/edit/:id', {
+        when('/articles/edit/:id', {
             templateUrl: 'views/edit_article.view.html',
-            controller: 'ArticlesEditCtrl'
+            controller: 'ArticleEditCtrl'
         }).
         otherwise({
             redirectTo: '/categories'
